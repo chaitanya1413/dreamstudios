@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Studio - Architecture & Interior</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://dreamstudios.in">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #121212;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        header img {
+            width: 120px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff9800;
+        }
+        .hero {
+            height: 100vh;
+            background: linear-gradient(45deg, #ff9800, #ff5722);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        section {
+            padding: 80px 10%;
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .contact-form {
+            background: #222;
+            padding: 40px;
+            box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.2);
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ff9800;
+            border-radius: 5px;
+            background: #333;
+            color: #fff;
+        }
+        .contact-form button {
+            background: #ff9800;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .contact-form button:hover {
+            background: #ff5722;
+        }
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://dreamstudios.in"><img src="img/logo.png" alt="Dream Studio Logo"></a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Designing the Future of Spaces</h1>
+    </section>
+    
+    <section id="about">
+        <h2>About Dream Studio</h2>
+        <p>We specialize in transforming interiors and architecture into inspiring spaces.</p>
+    </section>
+    
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="gallery">
+            <img src="img/project1.jpg" alt="Project 1">
+            <img src="img/project2.jpg" alt="Project 2">
+            <img src="img/project3.jpg" alt="Project 3">
+            <img src="img/project4.jpg" alt="Project 4">
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 <a href="https://dreamstudios.in" style="color: #ff9800; text-decoration: none;">Dream Studio</a>. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+a
